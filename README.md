@@ -1,31 +1,31 @@
 # 📦 Sistem Inventaris Barang
 
-Sistem Inventaris Barang adalah aplikasi berbasis web yang dikembangkan menggunakan **Laravel 12** untuk membantu proses pengelolaan data inventaris secara lebih efektif dan efisien. Aplikasi ini menyediakan fitur manajemen barang, kategori, supplier, transaksi barang masuk dan keluar, serta pemantauan stok secara real-time.
+Sistem Inventaris Barang merupakan aplikasi berbasis web yang dikembangkan menggunakan **Laravel 12** untuk membantu pengelolaan inventaris secara efektif dan efisien. Aplikasi ini memudahkan pengguna dalam mengelola data barang, kategori, supplier, transaksi barang masuk dan keluar, serta memantau stok barang secara real-time melalui dashboard yang informatif.
 
 ---
 
-## ✨ Fitur Utama
+# ✨ Fitur Utama
 
 - 🔐 Login Admin
 - 📊 Dashboard Inventaris
-- 📦 Manajemen Data Barang (CRUD)
-- 🗂️ Manajemen Kategori
-- 🚚 Manajemen Supplier
-- 📋 Manajemen Transaksi Barang Masuk & Keluar
+- 📦 CRUD Data Barang
+- 🗂️ CRUD Data Kategori
+- 🚚 CRUD Data Supplier
+- 📋 CRUD Data Transaksi Barang Masuk & Keluar
 - 🔍 Pencarian Data
 - 📄 Pagination
-- 📥 Import Data Excel/CSV
-- 📤 Export Data Excel/CSV
+- 📥 Import Data Excel (.xlsx/.csv)
+- 📤 Export Data Excel (.xlsx/.csv)
 - 📈 Grafik Ringkasan Inventaris
 - 🔔 Notifikasi Stok Menipis
-- 📝 Riwayat Aktivitas
+- 📝 Riwayat Aktivitas (Activity Log)
 - 👤 Pengaturan Profil
 - ✏️ Ubah Nama Pengguna
 - 🔒 Ubah Kata Sandi
 
 ---
 
-## 🛠️ Teknologi yang Digunakan
+# 🛠️ Teknologi yang Digunakan
 
 - Laravel 12
 - PHP 8.2+
@@ -38,7 +38,7 @@ Sistem Inventaris Barang adalah aplikasi berbasis web yang dikembangkan mengguna
 
 ---
 
-## 📂 Struktur Fitur
+# 📂 Struktur Menu
 
 - Dashboard
 - Data Barang
@@ -50,7 +50,7 @@ Sistem Inventaris Barang adalah aplikasi berbasis web yang dikembangkan mengguna
 
 ---
 
-## 🚀 Cara Menjalankan Project
+# 🚀 Cara Menjalankan Project
 
 ### 1. Clone Repository
 
@@ -68,6 +68,9 @@ cd inventaris-barang
 
 ```bash
 composer install
+```
+
+```bash
 npm install
 ```
 
@@ -77,13 +80,15 @@ npm install
 cp .env.example .env
 ```
 
-### 5. Generate Key
+### 5. Generate Application Key
 
 ```bash
 php artisan key:generate
 ```
 
 ### 6. Konfigurasi Database
+
+Sesuaikan file **.env**:
 
 ```env
 DB_CONNECTION=mysql
@@ -94,16 +99,22 @@ DB_USERNAME=root
 DB_PASSWORD=
 ```
 
-### 7. Jalankan Migrasi
+### 7. Jalankan Migrasi Database
 
 ```bash
 php artisan migrate --seed
 ```
 
-### 8. Jalankan Aplikasi
+### 8. Jalankan Server
 
 ```bash
 php artisan serve
+```
+
+Aplikasi dapat diakses melalui:
+
+```
+http://127.0.0.1:8000
 ```
 
 ---
@@ -112,53 +123,53 @@ php artisan serve
 
 ## 🔐 Login
 
-![Login](INVENTARIS%20BARANG/login.png)
+![Login](images/login.png)
 
 ---
 
 ## 📊 Dashboard
 
-![Dashboard](INVENTARIS%20BARANG/dashboard.png)
+![Dashboard](images/dashboard.png)
 
 ---
 
 ## 📦 Data Barang
 
-![Data Barang](INVENTARIS%20BARANG/databarang.png)
+![Data Barang](images/databarang.png)
 
 ---
 
 ## 📋 Data Transaksi
 
-![Data Transaksi](INVENTARIS%20BARANG/datatransaksi.png)
+![Data Transaksi](images/datatransaksi.png)
 
 ---
 
 ## 📝 Riwayat Aktivitas
 
-![Riwayat Aktivitas](INVENTARIS%20BARANG/riwayataktivitas.png)
+![Riwayat Aktivitas](images/riwayataktivitas.png)
 
 ---
 
 ## 👤 Pengaturan Profil
 
-![Pengaturan Profil](INVENTARIS%20BARANG/settingprofile.png)
+![Pengaturan Profil](images/settingprofile.png)
 
 ---
 
 ## ✏️ Ubah Nama Pengguna
 
-![Ubah Nama Pengguna](INVENTARIS%20BARANG/settingnamapengguna.png)
+![Ubah Nama Pengguna](images/settingnamapengguna.png)
 
 ---
 
 ## 🔒 Ubah Kata Sandi
 
-![Ubah Kata Sandi](INVENTARIS%20BARANG/ubahkatasandi.png)
+![Ubah Kata Sandi](images/ubahkatasandi.png)
 
 ---
 
-## 👩‍💻 Developer
+# 👨‍💻 Developer
 
 **Indah Purnama**
 
@@ -168,6 +179,6 @@ Jurusan Rekayasa Perangkat Lunak (RPL)
 
 ---
 
-## 📄 Lisensi
+# 📄 Lisensi
 
-Project ini dibuat untuk keperluan pembelajaran dan tugas sekolah.
+Project ini dibuat sebagai media pembelajaran dan untuk memenuhi tugas pengembangan aplikasi berbasis web menggunakan framework Laravel.
