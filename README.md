@@ -7,9 +7,9 @@ Sistem Inventaris Barang adalah aplikasi berbasis web yang dikembangkan mengguna
 ## ✨ Fitur Utama
 
 - 🔐 Login Admin
-- 📊 Dashboard Informasi Inventaris
+- 📊 Dashboard Inventaris
 - 📦 Manajemen Data Barang (CRUD)
-- 🗂️ Manajemen Kategori Barang
+- 🗂️ Manajemen Kategori
 - 🚚 Manajemen Supplier
 - 📋 Manajemen Transaksi Barang Masuk & Keluar
 - 🔍 Pencarian Data
@@ -18,7 +18,7 @@ Sistem Inventaris Barang adalah aplikasi berbasis web yang dikembangkan mengguna
 - 📤 Export Data Excel/CSV
 - 📈 Grafik Ringkasan Inventaris
 - 🔔 Notifikasi Stok Menipis
-- 📝 Riwayat Aktivitas (Activity Log)
+- 📝 Riwayat Aktivitas
 - 👤 Pengaturan Profil
 - ✏️ Ubah Nama Pengguna
 - 🔒 Ubah Kata Sandi
@@ -32,9 +32,9 @@ Sistem Inventaris Barang adalah aplikasi berbasis web yang dikembangkan mengguna
 - MySQL
 - Bootstrap 5
 - AdminLTE
-- JavaScript
 - HTML5
 - CSS3
+- JavaScript
 
 ---
 
@@ -55,7 +55,7 @@ Sistem Inventaris Barang adalah aplikasi berbasis web yang dikembangkan mengguna
 ### 1. Clone Repository
 
 ```bash
-git clone https://github.com/USERNAME/inventaris-barang.git
+git clone https://github.com/indahpurnama5800-cell/inventaris-barang.git
 ```
 
 ### 2. Masuk ke Folder Project
@@ -68,9 +68,6 @@ cd inventaris-barang
 
 ```bash
 composer install
-```
-
-```bash
 npm install
 ```
 
@@ -80,13 +77,13 @@ npm install
 cp .env.example .env
 ```
 
-### 5. Generate Application Key
+### 5. Generate Key
 
 ```bash
 php artisan key:generate
 ```
 
-### 6. Atur Database pada File `.env`
+### 6. Konfigurasi Database
 
 ```env
 DB_CONNECTION=mysql
@@ -103,7 +100,7 @@ DB_PASSWORD=
 php artisan migrate --seed
 ```
 
-### 8. Jalankan Project
+### 8. Jalankan Aplikasi
 
 ```bash
 php artisan serve
@@ -115,55 +112,55 @@ php artisan serve
 
 ## 🔐 Login
 
-![Login](screenshots/login.png)
+![Login](INVENTARIS%20BARANG/login.png)
 
 ---
 
 ## 📊 Dashboard
 
-![Dashboard](screenshots/dashboard.png)
+![Dashboard](INVENTARIS%20BARANG/dashboard.png)
 
 ---
 
 ## 📦 Data Barang
 
-![Data Barang](screenshots/databarang.png)
+![Data Barang](INVENTARIS%20BARANG/databarang.png)
 
 ---
 
 ## 📋 Data Transaksi
 
-![Data Transaksi](screenshots/datatransaksi.png)
+![Data Transaksi](INVENTARIS%20BARANG/datatransaksi.png)
 
 ---
 
 ## 📝 Riwayat Aktivitas
 
-![Riwayat Aktivitas](screenshots/riwayataktivitas.png)
+![Riwayat Aktivitas](INVENTARIS%20BARANG/riwayataktivitas.png)
 
 ---
 
 ## 👤 Pengaturan Profil
 
-![Pengaturan Profil](screenshots/settingprofile.png)
+![Pengaturan Profil](INVENTARIS%20BARANG/settingprofile.png)
 
 ---
 
 ## ✏️ Ubah Nama Pengguna
 
-![Ubah Nama Pengguna](screenshots/settingnamapengguna.png)
+![Ubah Nama Pengguna](INVENTARIS%20BARANG/settingnamapengguna.png)
 
 ---
 
 ## 🔒 Ubah Kata Sandi
 
-![Ubah Kata Sandi](screenshots/ubahkatasandi.png)
+![Ubah Kata Sandi](INVENTARIS%20BARANG/ubahkatasandi.png)
 
 ---
 
-## 👨‍💻 Developer
+## 👩‍💻 Developer
 
-Indah Purnama
+**Indah Purnama**
 
 SMK Negeri 7 Pekanbaru
 
