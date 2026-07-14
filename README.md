@@ -1,117 +1,168 @@
 # 📦 Sistem Inventaris Barang
 
-Sistem Inventaris Barang merupakan aplikasi berbasis web yang dikembangkan menggunakan **Laravel 12** untuk membantu pengelolaan inventaris secara efektif dan efisien. Aplikasi ini memudahkan pengguna dalam mengelola data barang, kategori, supplier, transaksi barang masuk dan keluar, serta memantau stok barang secara real-time melalui dashboard yang informatif.
+Sistem Inventaris Barang merupakan aplikasi berbasis web yang dikembangkan menggunakan **Laravel 12** untuk membantu proses pengelolaan inventaris secara lebih efektif dan efisien. Aplikasi ini menyediakan fitur pengelolaan data barang, transaksi barang masuk dan keluar, import dan export data, pemantauan stok secara real-time, serta pengingat restock agar pengelolaan inventaris menjadi lebih mudah.
 
 ---
 
-# ✨ Fitur Utama
+## ✨ Fitur Utama
 
-- 🔐 Login Admin
-- 📊 Dashboard Inventaris
+- 🔐 Login Authentication
+- 📊 Dashboard Informasi Inventaris
 - 📦 CRUD Data Barang
-- 🗂️ CRUD Data Kategori
-- 🚚 CRUD Data Supplier
-- 📋 CRUD Data Transaksi Barang Masuk & Keluar
+- 📑 CRUD Data Transaksi
 - 🔍 Pencarian Data
-- 📄 Pagination
-- 📥 Import Data Excel (.xlsx/.csv)
-- 📤 Export Data Excel (.xlsx/.csv)
-- 📈 Grafik Ringkasan Inventaris
-- 🔔 Notifikasi Stok Menipis
-- 📝 Riwayat Aktivitas (Activity Log)
+- 🎯 Filter Data
+- 📥 Import Data Excel (.xlsx)
+- 📤 Export Data Excel (.xlsx)
+- 📤 Export Data CSV
+- ⚠️ Notifikasi Barang Habis
+- 🔔 Pengingat Restock
+- 📈 Grafik Barang Masuk & Keluar
 - 👤 Pengaturan Profil
 - ✏️ Ubah Nama Pengguna
-- 🔒 Ubah Kata Sandi
+- 🔑 Ubah Kata Sandi
+- 📜 Riwayat Aktivitas Pengguna
+- ✅ Validasi Form
+- 📱 Responsive Design
 
 ---
 
-# 🛠️ Teknologi yang Digunakan
+## 🛠️ Teknologi yang Digunakan
 
 - Laravel 12
-- PHP 8.2+
+- PHP 8.2
 - MySQL
 - Bootstrap 5
-- AdminLTE
-- HTML5
-- CSS3
+- Blade Template
 - JavaScript
+- Chart.js
+- Laravel Excel
 
 ---
 
-# 📂 Struktur Menu
+## 📸 Screenshot Aplikasi
 
-- Dashboard
-- Data Barang
-- Data Kategori
-- Data Supplier
-- Data Transaksi
-- Riwayat Aktivitas
-- Pengaturan Profil
+### 🔐 Login
+
+![Login](images/login.png)
+
+Halaman autentikasi pengguna untuk masuk ke dalam sistem.
 
 ---
 
-# 🚀 Cara Menjalankan Project
+### 📊 Dashboard
 
-### 1. Clone Repository
+![Dashboard](images/dashboard.png)
+
+Dashboard menampilkan ringkasan data inventaris, grafik barang masuk dan keluar, jumlah stok, notifikasi stok habis, serta pengingat restock.
+
+---
+
+### 📦 Data Barang
+
+![Data Barang](images/databarang.png)
+
+Halaman pengelolaan data barang dengan fitur CRUD, pencarian, filter, import data dari Excel, export ke Excel dan CSV.
+
+---
+
+### 📑 Data Transaksi
+
+![Data Transaksi](images/datatransaksi.png)
+
+Halaman pencatatan transaksi barang masuk dan barang keluar lengkap dengan pencarian dan filter berdasarkan tanggal maupun jenis transaksi.
+
+---
+
+### 👤 Setting Profile
+
+![Setting Profile](images/settingprofile.png)
+
+Halaman profil pengguna yang menampilkan informasi akun serta menu pengaturan akun.
+
+---
+
+### ✏️ Setting Nama Pengguna
+
+![Setting Nama Pengguna](images/settingnamapengguna.png)
+
+Halaman untuk mengubah nama lengkap dan email pengguna.
+
+---
+
+### 🔑 Ubah Kata Sandi
+
+![Ubah Kata Sandi](images/ubahkatasandi.png)
+
+Halaman untuk memperbarui kata sandi akun agar keamanan tetap terjaga.
+
+---
+
+### 📜 Riwayat Aktivitas
+
+![Riwayat Aktivitas](images/riwayataktivitas.png)
+
+Halaman yang menampilkan seluruh aktivitas pengguna di dalam sistem, seperti tambah, ubah, hapus, import, dan export data.
+
+---
+
+## 🚀 Cara Menjalankan Project
+
+Clone repository
 
 ```bash
 git clone https://github.com/indahpurnama5800-cell/inventaris-barang.git
 ```
 
-### 2. Masuk ke Folder Project
+Masuk ke folder project
 
 ```bash
 cd inventaris-barang
 ```
 
-### 3. Install Dependency
+Install dependency
 
 ```bash
 composer install
 ```
 
+Install package frontend
+
 ```bash
 npm install
 ```
 
-### 4. Salin File Environment
+Salin file environment
 
 ```bash
 cp .env.example .env
 ```
 
-### 5. Generate Application Key
+Generate application key
 
 ```bash
 php artisan key:generate
 ```
 
-### 6. Konfigurasi Database
-
-Sesuaikan file **.env**:
-
-```env
-DB_CONNECTION=mysql
-DB_HOST=127.0.0.1
-DB_PORT=3306
-DB_DATABASE=db_inventaris_barang
-DB_USERNAME=root
-DB_PASSWORD=
-```
-
-### 7. Jalankan Migrasi Database
+Atur konfigurasi database pada file **.env**, kemudian jalankan migrasi database.
 
 ```bash
 php artisan migrate --seed
 ```
 
-### 8. Jalankan Server
+Jalankan Vite
+
+```bash
+npm run dev
+```
+
+Jalankan server Laravel
 
 ```bash
 php artisan serve
 ```
 
-Aplikasi dapat diakses melalui:
+Buka browser
 
 ```
 http://127.0.0.1:8000
@@ -119,57 +170,7 @@ http://127.0.0.1:8000
 
 ---
 
-# 📷 Tampilan Aplikasi
-
-## 🔐 Login
-
-![Login](images/login.png)
-
----
-
-## 📊 Dashboard
-
-![Dashboard](images/dashboard.png)
-
----
-
-## 📦 Data Barang
-
-![Data Barang](images/databarang.png)
-
----
-
-## 📋 Data Transaksi
-
-![Data Transaksi](images/datatransaksi.png)
-
----
-
-## 📝 Riwayat Aktivitas
-
-![Riwayat Aktivitas](images/riwayataktivitas.png)
-
----
-
-## 👤 Pengaturan Profil
-
-![Pengaturan Profil](images/settingprofile.png)
-
----
-
-## ✏️ Ubah Nama Pengguna
-
-![Ubah Nama Pengguna](images/settingnamapengguna.png)
-
----
-
-## 🔒 Ubah Kata Sandi
-
-![Ubah Kata Sandi](images/ubahkatasandi.png)
-
----
-
-# 👨‍💻 Developer
+## 👩‍💻 Developer
 
 **Indah Purnama**
 
@@ -179,6 +180,6 @@ Jurusan Rekayasa Perangkat Lunak (RPL)
 
 ---
 
-# 📄 Lisensi
+## 📄 License
 
-Project ini dibuat sebagai media pembelajaran dan untuk memenuhi tugas pengembangan aplikasi berbasis web menggunakan framework Laravel.
+Project ini dibuat untuk keperluan pembelajaran dan tugas sekolah.
