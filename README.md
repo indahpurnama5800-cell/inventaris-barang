@@ -43,7 +43,7 @@ Sistem Inventaris Barang merupakan aplikasi berbasis web yang dikembangkan mengg
 ## 📸 Screenshot Aplikasi
 
 ### 🔐 Login
-![Login](databraang/login.png)
+![Login](databarang/login.png)
 Halaman autentikasi pengguna untuk masuk ke dalam sistem.
 
 ### 📊 Dashboard
