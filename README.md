@@ -60,7 +60,7 @@ Dashboard menampilkan ringkasan data inventaris, grafik barang masuk dan keluar,
 
 ### 📦 Data Barang
 
-![Data Barang](images/databarang.png)
+![Data Barang](images/barang.png)
 
 Halaman pengelolaan data barang dengan fitur CRUD, pencarian, filter, import data dari Excel, export ke Excel dan CSV.
 
